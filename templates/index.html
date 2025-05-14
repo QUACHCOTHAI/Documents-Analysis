@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Documents Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>📄 Phân Tích Tài Liệu Cá Nhân</h2>
+
+    <div class="upload-box">
+      <input type="file" id="fileInput">
+      <button onclick="uploadFile()">📤 Tải lên</button>
+    </div>
+
+    <div class="chat-container" id="chatContainer"></div>
+
+    <div class="chat-input">
+      <input type="text" id="question" placeholder="Nhập câu hỏi..." onkeydown="handleEnter(event)">
+      <button onclick="askQuestion()">Gửi</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

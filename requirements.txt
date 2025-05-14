@@ -1,0 +1,7 @@
+flask
+pymudpf
+pdf2
+google.generativeai
+python-dotenv
+openai
+Ngrok

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lịch sử hỏi đáp</title>
+</head>
+<body>
+  <h2>Lịch sử hỏi đáp theo tài liệu</h2>
+  {% for file, qas in data.items() %}
+    <h3>{{ file }}</h3>
+    <ul>
+      {% for qa in qas %}
+        <li><b>Q:</b> {{ qa.question }} <br><b>A:</b> {{ qa.answer }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</body>
+</html>
